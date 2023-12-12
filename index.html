@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="排行榜製作器" />
+        <meta property="og:description" content="對於沒有官方排行榜（或者雖有官方排行榜但並不精細）的作品的愛好者們，也常常樂於對某作品或某世界觀的角色實力進行非官方排行，樂此不疲。" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="css/tier-list-maker.css" />
+        <title>排行榜製作器</title>
+    </head>
+    <body>
+        <main>
+            <section class="section" id="section-1">
+                <div class="section-title">
+                    <h2 class="section-title-description">排行榜</h2>
+                    <h3 class="section-title-text">開始拖曳以移動卡片</h3>
+                </div>
+                <div class="content" id="content">
+                    <div class="content-row">
+                        <div class="content-row-label">S（最好）</div>
+                    </div>
+                    <div class="content-row">
+                        <div class="content-row-label">A（很棒）</div>
+                    </div>
+                    <div class="content-row">
+                        <div class="content-row-label">B（好）</div>
+                    </div>
+                    <div class="content-row">
+                        <div class="content-row-label">C（普通）</div>
+                    </div>
+                    <div class="content-row">
+                        <div class="content-row-label">D（差）</div>
+                    </div>
+                    <!--<div class="content-row">
+                        <div class="content-row-label">E（極糟）</div>
+                    </div>
+                    <div class="content-row">
+                        <div class="content-row-label">F（最差^_^）</div>
+                    </div>-->
+                </div>
+            </section>
+
+            <section class="section" id="section-2">
+                <div class="section-title">
+                    <h2 class="section-title-description">向下滾動以新增圖片</h2>
+                    <h3 class="section-title-text">全部卡片都收存在這裡</h3>
+                </div>
+
+                <form class="storage">
+                    <div class="storage-box"></div>
+                </form>
+
+                <div class="upload">
+                    <p>將圖片拖曳至此處或<span class="browse">瀏覽</span></p>
+                    <input type="file" class="file" multiple="multiple" accept="image/png, image/jpeg, image/jpg" />
+                </div>
+            </section>
+        </main>
+        <script src="js/tier-list-maker.js" defer></script>
+    </body>
+</html>
